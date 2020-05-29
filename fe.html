@@ -4,13 +4,13 @@
         <link href="fe.css" rel="stylesheet">
         <title>Fontes de Energia</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+     
     </head>
     <body>
         <div id="interface">
             <header>
                 <h1>Fontes de Energia</h1>
-                <img src="lampadas.jpg" id="lamp">
+                <img src="lampada-acesa.jpg" id="lamp" onclick="change()">
                 <nav id="menu">
                     <ul type="none">
                         <li><a href="fe.html">HOME</a></li>
@@ -44,6 +44,19 @@
                     </div>
                   </div>
             </section>
-        </div>    
+        </div>   
+        <script>
+            let lampada = "True";
+            function change(){
+                if(lampada == "True"){
+                    document.querySelector("#lamp").src = "lampada-apagada.jpg";
+                    lampada = "False"
+                }
+                else{
+                    document.querySelector("#lamp").src = "lampada-acesa.jpg";
+                    lampada = "True"
+                }
+            }
+        </script> 
     </body>
 </html>
