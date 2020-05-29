@@ -1,13 +1,64 @@
 
 div#interface{
     background-color: white;
-    width: 1000px;
+    width: 800px;
+    height: 1000px;
     margin: 0px auto 0px auto;
     padding: 10px;
     box-shadow: 0px 0px 5px black;
 }
 header{
-    border-bottom: 1px black dashed;
     text-align: center;
+    display: block;
+    
+    margin-top: 80px;
+    margin-bottom: 50px;
+    
+}
+nav#menu {
+    display: block;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: rgb(206, 206, 206);
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px;
+    color: floralwhite;
+    transition: background-color 3s;
+}
+nav#menu ul{
+    position: absolute;
+    top: -10px;
+    left: 520px;
+}
+/*links on menu*/
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: white;
 }
 
+nav#menu li:hover{
+    background-color: rgb(85, 85, 85);
+}
+
+img#lamp{
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    height: 100px;
+    left: 150px;
+}
+iframe#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img#matriz{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
