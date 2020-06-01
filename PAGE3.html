@@ -20,13 +20,12 @@
         <div id="interface">
             <header>
                 <h1>Fontes Esgotáveis de Energia</h1>
-                <img src="lampada-acesa.jpg" id="lamp" onclick="change()">
+                <img src="img/lampada-acesa.png" id="lamp" onclick="change()">
                 <nav id="menu">
                     <ul type="none">
                         <li><a href="fe.html">HOME</a></li>
                         <li><a href="PAGE2.html">RENOVÁVEIS</a></li>
                         <li><a href="PAGE3.html">ESGOTÁVEIS</a></li>
-                        <li><a href="PAGE4.html">PAGE4</a></li>
                     </ul>
                 </nav>
             </header>
@@ -34,7 +33,7 @@
                 <p>Energias esgotáveis ou fontes não renováveis são as fontes de energia que dependem de processos em escala de tempo geológica ou de formação do sistema solar para se tornarem disponíveis, por exemplo, o carvão mineral, o petróleo, o gás natural e a energia nuclear.</p>
             </section>
             <section>
-                <img id="esgotaveis" src="esgotáveis.jpg" usemap="#meumapa2">
+                <img id="esgotaveis" src="img/esgotáveis.jpg" usemap="#meumapa2">
                 <iframe src="iframe2.html" name="janela2" id="iframe2"></iframe>
                 <map name="meumapa2">
                     <area shape="poly" coords="3,43,81,7,109,36,83,98,7,121" target="janela2" href="iframe2.html#oil">
@@ -44,12 +43,22 @@
                     
                 </map>
             </section>
+            <section>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">Anterior</a></li>
+                      <li class="page-item"><a class="page-link" href="fe.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE3.html">3</a></li>
+                      
+                    </ul>
+            </section>
         </div> 
         <script>
              let lampada = "True";
             function change(){
                 if(lampada == "True"){
-                    document.querySelector("#lamp").src = "lampada-apagada.png";
+                    document.querySelector("#lamp").src = "img/lampada-apagada.png";
                     lampada = "False";
                     document.body.querySelector("#interface").style.backgroundColor = "black";
                     document.body.querySelector("#interface").style.color = "white";
@@ -58,7 +67,7 @@
                     
                 }
                 else{
-                    document.querySelector("#lamp").src = "lampada-acesa.jpg";
+                    document.querySelector("#lamp").src = "img/lampada-acesa.png";
                     document.body.querySelector("#interface").style.backgroundColor = "white";
                     document.body.querySelector("#interface").style.color = "black";
                     lampada = "True"

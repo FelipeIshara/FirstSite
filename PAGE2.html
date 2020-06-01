@@ -10,13 +10,12 @@
         <div id="interface">
             <header>
                 <h1 id="titlepg2">Fontes Renováveis de Energia</h1>
-                <img src="lampada-acesa.jpg" id="lamp" onclick="change()">
+                <img src="img/lampada-acesa.png" id="lamp" onclick="change()">
                 <nav id="menu">
                     <ul type="none">
                         <li><a href="fe.html">HOME</a></li>
                         <li><a href="PAGE2.html">RENOVÁVEIS</a></li>
                         <li><a href="PAGE3.html">ESGOTÁVEIS</a></li>
-                        <li><a href="PAGE4.html">PAGE4</a></li>
                     </ul>
                 </nav>
             </header>
@@ -29,7 +28,7 @@
             </section>
             <section>
                 <iframe src="iframe.html" name="janela" id="iframe"></iframe>
-                <img id="renovaveis1" src="renováveis3.png" usemap="#meumapa">
+                <img id="renovaveis1" src="img/renováveis3.png" usemap="#meumapa">
                 <map name="meumapa">
                     <area shape="poly" coords="145,59,191,47,188,99,132,105" target="janela" href="iframe.html#eolica">
                     <area shape="poly" coords="115,104,188,94,191,153,100,139" target="janela" href="iframe.html#geoterminca">
@@ -38,13 +37,22 @@
                     <area shape="poly" coords="111,311,190,312,188,381,113,378,91,345" target="janela" href="iframe.html#biomassa">
                 </map>
             </section>
-         
+            <section>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="fe.html">Anterior</a></li>
+                      <li class="page-item"><a class="page-link" href="fe.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE3.html">3</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE3.html">Próxima</a></li>
+                    </ul>
+            </section>
         </div>  
         <script>
             let lampada = "True";
             function change(){
                 if(lampada == "True"){
-                    document.querySelector("#lamp").src = "lampada-apagada.png";
+                    document.querySelector("#lamp").src = "img/lampada-apagada.png";
                     lampada = "False";
                     document.body.querySelector("#interface").style.backgroundColor = "black";
                     document.body.querySelector("#interface").style.color = "white";
@@ -53,7 +61,7 @@
                     
                 }
                 else{
-                    document.querySelector("#lamp").src = "lampada-acesa.jpg";
+                    document.querySelector("#lamp").src = "img/lampada-acesa.png";
                     document.body.querySelector("#interface").style.backgroundColor = "white";
                     document.body.querySelector("#interface").style.color = "black";
                     lampada = "True"

@@ -35,7 +35,7 @@ nav#menu li{
 nav#menu ul{
     position: absolute;
     top: -10px;
-    left: 320px;
+    left: 420px;
 }
 /*links on menu*/
 nav#menu a{
@@ -87,4 +87,7 @@ div#carouselExampleControls{
     height: 500px;
     display: block;
     margin: 50px auto 50px auto;
+}
+.pagination{
+    margin-left: 500px;
 }

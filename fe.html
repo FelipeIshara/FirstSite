@@ -10,13 +10,12 @@
         <div id="interface">
             <header>
                 <h1>Fontes de Energia</h1>
-                <img src="lampada-acesa.jpg" id="lamp" onclick="change()">
+                <img src="img/lampada-acesa.png" id="lamp" onclick="change()">
                 <nav id="menu">
                     <ul type="none">
                         <li><a href="fe.html">HOME</a></li>
                         <li><a href="PAGE2.html">RENOVÁVEIS</a></li>
                         <li><a href="PAGE3.html">ESGOTÁVEIS</a></li>
-                        <li><a href="PAGE4.html">PAGE4</a></li>
                     </ul>
                 </nav>
             </header>
@@ -28,31 +27,28 @@
             </section>
             <section>
                 <h2>Como estudar o tema para vestibulares</h3>
-                <p>É importante ter clareza sobre a divisão entre energias <a href="PAGE2.html">renováveis</a> e não-renováveis(<a href="PAGE3.html">Esgotáveis</a>) e ter clareza sobre o que é uma matriz energética, quais são as fontes de energia mais relevantes na matriz energética mundial e do Brasil. 
+                <p>É importante ter clareza sobre a divisão entre energias <a href="PAGE2.html">renováveis</a> e não-renováveis (<a href="PAGE3.html">Esgotáveis</a>) e ter clareza sobre o que é uma matriz energética, quais são as fontes de energia mais relevantes na matriz energética mundial e do Brasil. 
                     Outro ponto fundamental é compreender os impactos, positivos e negativos, de cada fonte de energia, bem como qual fonte é mais adequada em cada contexto. 
                     Observação: Compreendemos que cada aluno tem sua forma de apreender o conteúdo, no entanto, quando se trata de estudar para vestibulares, é fundamental que se faça o máximo de exercícios possíveis.
                 </p>
             </section>
             <section>
-                <div class="card">
-                   
-                    <div class="card-body">
-                      <blockquote class="blockquote mb-0">
-                        <p id="quote">Energia primária é aquela que “existe em recursos naturais (tal como carvão, petróleo, energia solar e
-                            urânio) e que não foi convertida ou transformada por humanos”.</p>
-                        <footer class="blockquote-footer">(PARK, 2011, p.356)
-                      </blockquote>
-                    </div>
-                  </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                     
+                      <li class="page-item"><a class="page-link" href="fe.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE3.html">3</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">Próxima</a></li>
+                    </ul>
             </section>
         </div>   
         <script>
-            const menuitens = document.querySelectorAll('#menu a');
-            console.log(menuitens);
             let lampada = "True";
+            alert("Clique na lampada para ativar o modo escuro\n Click on the lamp to activate dark mode")
             function change(){
                 if(lampada == "True"){
-                    document.querySelector("#lamp").src = "lampada-apagada.png";
+                    document.querySelector("#lamp").src = "img/lampada-apagada.png";
                     lampada = "False";
                     document.body.querySelector("#interface").style.backgroundColor = "black";
                     document.body.querySelector("#interface").style.color = "white";
@@ -61,7 +57,7 @@
                     
                 }
                 else{
-                    document.querySelector("#lamp").src = "lampada-acesa.jpg";
+                    document.querySelector("#lamp").src = "img/lampada-acesa.png";
                     document.body.querySelector("#interface").style.backgroundColor = "white";
                     document.body.querySelector("#interface").style.color = "black";
                     document.body.querySelector(".card-body").style.backgroundColor = "white";
