@@ -41,8 +41,6 @@
          
         </div>  
         <script>
-           const menuitens = document.querySelectorAll('#menu a');
-            console.log(menuitens);
             let lampada = "True";
             function change(){
                 if(lampada == "True"){
@@ -50,6 +48,7 @@
                     lampada = "False";
                     document.body.querySelector("#interface").style.backgroundColor = "black";
                     document.body.querySelector("#interface").style.color = "white";
+                    querySelector("#iframe").document.body.style.color = "white";
                     document.body.querySelector(".card-body").style.backgroundColor = "black";
                     document.body.style.backgroundColor = "gray";
                     
@@ -58,10 +57,9 @@
                     document.querySelector("#lamp").src = "lampada-acesa.jpg";
                     document.body.querySelector("#interface").style.backgroundColor = "white";
                     document.body.querySelector("#interface").style.color = "black";
-                    document.body.querySelector(".card-body").style.backgroundColor = "white";
                     lampada = "True"
                 }
             }
-        </script>   
+        </script> 
     </body>
 </html>
