@@ -35,7 +35,7 @@ nav#menu li{
 nav#menu ul{
     position: absolute;
     top: -10px;
-    left: 520px;
+    left: 320px;
 }
 /*links on menu*/
 nav#menu a{
@@ -52,10 +52,10 @@ nav#menu li:hover{
 
 img#lamp{
     position: absolute;
-    width: 200px;
+    width: 100px;
     top: 50px;
-    height: 120px;
-    left: 150px;
+    height: 100px;
+    left: 30px;
 }
 iframe#video{
     display: block;
@@ -76,7 +76,7 @@ h2 {
     margin-top: 100px;
 }
 h1#titlepg2{
-    text-indent: 170px;
+    text-align: center;
    
 }
 
