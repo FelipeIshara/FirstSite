@@ -4,12 +4,22 @@
         <link href="fe.css" rel="stylesheet">
         <title>Fontes de Energia</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     
+        <style>
+            img#esgotaveis{
+                margin-left: 100px;
+                position: absolute;
+            }
+            iframe#iframe2{
+            height: 400px;
+            width: 400px;
+            margin-left: 300px;
+            }
+        </style>
     </head>
     <body>
         <div id="interface">
             <header>
-                <h1>Esgotáveis</h1>
+                <h1>Fontes Esgotáveis de Energia</h1>
                 <img src="lampada-acesa.jpg" id="lamp" onclick="change()">
                 <nav id="menu">
                     <ul type="none">
@@ -21,7 +31,18 @@
                 </nav>
             </header>
             <section>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus sint dolores quidem ratione vitae accusantium inventore aut voluptates aliquam incidunt beatae ipsam odio magnam quia, quisquam minus natus ea?
+                <p>Energias esgotáveis ou fontes não renováveis são as fontes de energia que dependem de processos em escala de tempo geológica ou de formação do sistema solar para se tornarem disponíveis, por exemplo, o carvão mineral, o petróleo, o gás natural e a energia nuclear.</p>
+            </section>
+            <section>
+                <img id="esgotaveis" src="esgotáveis.jpg" usemap="#meumapa2">
+                <iframe src="iframe2.html" name="janela2" id="iframe2"></iframe>
+                <map name="meumapa2">
+                    <area shape="poly" coords="3,43,81,7,109,36,83,98,7,121" target="janela2" href="iframe2.html#oil">
+                    <area shape="poly" coords="10,139,132,135,162,176,130,212,8,210" target="janela2" href="iframe2.html#coal">
+                    <area shape="poly" coords="10,225,82,223,96,256,78,294,10,296" target="janela2" href="iframe2.html#gas">
+                    <area shape="poly" coords="9,313,132,316,164,356,132,391,6,380" target="janela2" href="iframe2.html#nuclear">
+                    
+                </map>
             </section>
         </div> 
         <script>
