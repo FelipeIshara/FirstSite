@@ -3,10 +3,11 @@ p {
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 40px;
 }
 div#interface{
     background-color: white;
-    width: 800px;
+    width: 80%;
     height: 1300px;
     margin: 0px auto 0px auto;
     padding: 10px;
@@ -35,7 +36,7 @@ nav#menu li{
 nav#menu ul{
     position: absolute;
     top: -10px;
-    left: 520px;
+    left: 60%;
 }
 /*links on menu*/
 nav#menu a{
@@ -53,9 +54,9 @@ nav#menu li:hover{
 img#lamp{
     position: absolute;
     width: 200px;
-    top: 50px;
+    top: 10%;
     height: 120px;
-    left: 150px;
+    left: 15%;
 }
 iframe#video{
     display: block;
@@ -70,6 +71,7 @@ iframe#video{
 h2 {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .card{
