@@ -47,20 +47,18 @@
             let lampada = "True";
             alert("Clique na lampada para ativar o modo escuro\n Click on the lamp to activate dark mode")
             function change(){
-                if(lampada == "True"){
+                if(lampada === "True"){
                     document.querySelector("#lamp").src = "img/lampada-apagada.png";
-                    lampada = "False";
                     document.body.querySelector("#interface").style.backgroundColor = "black";
                     document.body.querySelector("#interface").style.color = "white";
-                    document.body.querySelector(".card-body").style.backgroundColor = "black";
                     document.body.style.backgroundColor = "gray";
+                    lampada = "False";
                     
                 }
                 else{
                     document.querySelector("#lamp").src = "img/lampada-acesa.png";
                     document.body.querySelector("#interface").style.backgroundColor = "white";
                     document.body.querySelector("#interface").style.color = "black";
-                    document.body.querySelector(".card-body").style.backgroundColor = "white";
                     lampada = "True"
                 }
             }
