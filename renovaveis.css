@@ -2,15 +2,18 @@ iframe#iframe{
     height: 400px;
     width: 400px;
    
-    margin-left: 100px;
 }
-section{
+section#mapadeimg{
     position: relative;
+    display: flex;
+    width: 100%;
+    margin: 50px auto 80px auto;
+    justify-content: center;
 }
 img#renovaveis1{
     height: 400px;
     width: 200px;
     
     
-    position: absolute;
+    
 }
