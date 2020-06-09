@@ -4,31 +4,61 @@
         <link href="fe.css" rel="stylesheet">
         <title>Fontes de Energia</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     
+        <style>
+            img#esgotaveis{
+                margin-left: 100px;
+                position: absolute;
+            }
+            iframe#iframe2{
+            height: 400px;
+            width: 400px;
+            margin-left: 300px;
+            }
+        </style>
     </head>
     <body>
         <div id="interface">
             <header>
-                <h1>Esgotáveis</h1>
-                <img src="lampada-acesa.jpg" id="lamp" onclick="change()">
+                <h1>Fontes Esgotáveis de Energia</h1>
+                <img src="img/lampada-acesa.png" id="lamp" onclick="change()">
                 <nav id="menu">
                     <ul type="none">
                         <li><a href="fe.html">HOME</a></li>
                         <li><a href="PAGE2.html">RENOVÁVEIS</a></li>
                         <li><a href="PAGE3.html">ESGOTÁVEIS</a></li>
-                        <li><a href="PAGE4.html">PAGE4</a></li>
                     </ul>
                 </nav>
             </header>
             <section>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus sint dolores quidem ratione vitae accusantium inventore aut voluptates aliquam incidunt beatae ipsam odio magnam quia, quisquam minus natus ea?
+                <p>Energias esgotáveis ou fontes não renováveis são as fontes de energia que dependem de processos em escala de tempo geológica ou de formação do sistema solar para se tornarem disponíveis, por exemplo, o carvão mineral, o petróleo, o gás natural e a energia nuclear.</p>
+            </section>
+            <section>
+                <img id="esgotaveis" src="img/esgotáveis.jpg" usemap="#meumapa2">
+                <iframe src="iframe2.html" name="janela2" id="iframe2"></iframe>
+                <map name="meumapa2">
+                    <area shape="poly" coords="3,43,81,7,109,36,83,98,7,121" target="janela2" href="iframe2.html#oil">
+                    <area shape="poly" coords="10,139,132,135,162,176,130,212,8,210" target="janela2" href="iframe2.html#coal">
+                    <area shape="poly" coords="10,225,82,223,96,256,78,294,10,296" target="janela2" href="iframe2.html#gas">
+                    <area shape="poly" coords="9,313,132,316,164,356,132,391,6,380" target="janela2" href="iframe2.html#nuclear">
+                    
+                </map>
+            </section>
+            <section>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">Anterior</a></li>
+                      <li class="page-item"><a class="page-link" href="fe.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE3.html">3</a></li>
+                      
+                    </ul>
             </section>
         </div> 
         <script>
-            let lampada = "True";
+             let lampada = "True";
             function change(){
                 if(lampada == "True"){
-                    document.querySelector("#lamp").src = "lampada-apagada.png";
+                    document.querySelector("#lamp").src = "img/lampada-apagada.png";
                     lampada = "False";
                     document.body.querySelector("#interface").style.backgroundColor = "black";
                     document.body.querySelector("#interface").style.color = "white";
@@ -37,10 +67,9 @@
                     
                 }
                 else{
-                    document.querySelector("#lamp").src = "lampada-acesa.jpg";
+                    document.querySelector("#lamp").src = "img/lampada-acesa.png";
                     document.body.querySelector("#interface").style.backgroundColor = "white";
                     document.body.querySelector("#interface").style.color = "black";
-                    document.body.querySelector(".card-body").style.backgroundColor = "white";
                     lampada = "True"
                 }
             }

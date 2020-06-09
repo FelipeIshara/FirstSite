@@ -4,19 +4,18 @@
         <link href="fe.css" rel="stylesheet">
         <title>Fontes de Energia</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     
+        <link href="renovaveis.css" rel="stylesheet">
     </head>
     <body>
         <div id="interface">
             <header>
                 <h1 id="titlepg2">Fontes Renováveis de Energia</h1>
-                <img src="lampada-acesa.jpg" id="lamp" onclick="change()">
+                <img src="img/lampada-acesa.png" id="lamp" onclick="change()">
                 <nav id="menu">
                     <ul type="none">
                         <li><a href="fe.html">HOME</a></li>
                         <li><a href="PAGE2.html">RENOVÁVEIS</a></li>
                         <li><a href="PAGE3.html">ESGOTÁVEIS</a></li>
-                        <li><a href="PAGE4.html">PAGE4</a></li>
                     </ul>
                 </nav>
             </header>
@@ -24,36 +23,50 @@
                 <p> Para distinguirmos se uma fonte de energia é renovável ou não devemos pensar no recurso que gera essa energia. Este recurso é finito? ele pode ser reproduzível? Quanto tempo a natureza demora para repor este recurso?
                     Todas essas perguntas são relevantes se quisermos nos aprofundar no tema. Por agora podemos pensar que uma fonte de energia renovável é toda energia na qual o recurso gerador não se esgota ao longo do tempo. É o caso da energia solar, eólica, geotermica, hidraulica, entre outras.
                     Quando falamos ao longo do tempo, queremos dizer o tempo do homem (tempo histórico), e não o tempo da terra (geológico). 
-
                 </p>
 
             </section>
             <section>
-                <img id="renovaveis" src="renováveis.png">
+                <iframe src="iframe.html" name="janela" id="iframe"></iframe>
+                <img id="renovaveis1" src="img/renováveis3.png" usemap="#meumapa">
+                <map name="meumapa">
+                    <area shape="poly" coords="145,59,191,47,188,99,132,105" target="janela" href="iframe.html#eolica">
+                    <area shape="poly" coords="115,104,188,94,191,153,100,139" target="janela" href="iframe.html#geoterminca">
+                    <area shape="poly" coords="112,148,190,156,189,226,112,224,89,186" target="janela" href="iframe.html#solar">
+                    <area shape="poly" coords="121,226,189,228,189,302,124,308,101,270" target="janela" href="iframe.html#hidro">
+                    <area shape="poly" coords="111,311,190,312,188,381,113,378,91,345" target="janela" href="iframe.html#biomassa">
+                </map>
             </section>
-         
+            <section>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="fe.html">Anterior</a></li>
+                      <li class="page-item"><a class="page-link" href="fe.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE2.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE3.html">3</a></li>
+                      <li class="page-item"><a class="page-link" href="PAGE3.html">Próxima</a></li>
+                    </ul>
+            </section>
         </div>  
         <script>
             let lampada = "True";
-            let body = document.body;
             function change(){
                 if(lampada == "True"){
-                    document.querySelector("#lamp").src = "lampada-apagada.png";
+                    document.querySelector("#lamp").src = "img/lampada-apagada.png";
                     lampada = "False";
-                    body.querySelector("#interface").style.backgroundColor = "black";
-                    body.querySelector("#interface").style.color = "white";
-                    body.querySelector(".card-body").style.backgroundColor = "black";
-                    body.style.backgroundColor = "gray";
+                    document.body.querySelector("#interface").style.backgroundColor = "black";
+                    document.body.querySelector("#interface").style.color = "white";
+                    document.body.querySelector(".card-body").style.backgroundColor = "black";
+                    document.body.style.backgroundColor = "gray";
                     
                 }
                 else{
-                    document.querySelector("#lamp").src = "lampada-acesa.jpg";
-                    body.querySelector("#interface").style.backgroundColor = "white";
-                    body.querySelector("#interface").style.color = "black";
-                    body.querySelector(".card-body").style.backgroundColor = "white";
+                    document.querySelector("#lamp").src = "img/lampada-acesa.png";
+                    document.body.querySelector("#interface").style.backgroundColor = "white";
+                    document.body.querySelector("#interface").style.color = "black";
                     lampada = "True"
                 }
             }
-        </script>   
+        </script> 
     </body>
 </html>
